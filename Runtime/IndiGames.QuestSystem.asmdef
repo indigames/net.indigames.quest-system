@@ -1,0 +1,14 @@
+{
+    "name": "IndiGames.QuestSystem",
+    "rootNamespace": "IndiGames.QuestSystem",
+    "references": ["GUID:70fa917542221ed46a88da7210512230"],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
