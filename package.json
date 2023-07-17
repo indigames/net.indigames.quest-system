@@ -4,10 +4,6 @@
   "displayName": "IndiGames Quest System",
   "description": "Quest System",
   "unity": "2021.3",
-  "dependencies": {
-    "com.unity.nuget.newtonsoft-json": "3.2.1",
-    "net.indigames.common": "0.0.1"
-  },
   "unityRelease": "27f1",
   "author": {
     "name": "trungnhm1998",
