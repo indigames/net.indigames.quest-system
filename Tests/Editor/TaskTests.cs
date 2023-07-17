@@ -1,6 +1,4 @@
-﻿using IndiGames.QuestSystem.Definitions;
-using IndiGames.QuestSystem.Specifications;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace IndiGamesEditor.QuestSystem.Tests
 {
@@ -10,8 +8,6 @@ namespace IndiGamesEditor.QuestSystem.Tests
         [Test]
         public void TaskTest()
         {
-            ITaskDefinition taskDef = new TaskDefinition();
-            ITaskSpecification taskSpec = new TaskSpecification();
         }
     }
 }

@@ -3,14 +3,11 @@ using UnityEngine;
 
 namespace IndiGames.QuestSystem.Components
 {
-    [AddComponentMenu("IndiGames/Quest System/Quest Manager")]
+    [AddComponentMenu("Indi Games/Quest System/Quest Manager")]
     [DisallowMultipleComponent]
     public class QuestManager : MonoBehaviour
     {
         [SerializeField] private QuestDatabase _questDatabase;
-        
-        // [Header("Runtime")]
-        // [SerializeField] private Quest _currentQuest;
         
         private void Awake()
         {
