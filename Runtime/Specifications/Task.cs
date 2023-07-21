@@ -1,6 +1,6 @@
 ﻿namespace IndiGames.QuestSystem.Specifications
 {
-    public class TaskSpecification : ITaskSpecification
+    public class Task
     {
         
     }
