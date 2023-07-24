@@ -1,4 +1,5 @@
 ﻿using IndiGames.QuestSystem.Definitions;
+using IndiGames.QuestSystem.Specifications;
 using UnityEngine;
 
 namespace IndiGames.QuestSystem.Components
@@ -8,7 +9,9 @@ namespace IndiGames.QuestSystem.Components
     public class QuestManager : MonoBehaviour
     {
         [SerializeField] private QuestDatabase _questDatabase;
-        
+
+        private Quest _activeQuest;
+
         private void Awake()
         {
             if (_questDatabase == null)
@@ -19,8 +22,6 @@ namespace IndiGames.QuestSystem.Components
             InitializeQuests();
         }
 
-        private void InitializeQuests()
-        {
-        }
+        private void InitializeQuests() { }
     }
 }

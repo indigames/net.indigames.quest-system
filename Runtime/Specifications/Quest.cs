@@ -1,12 +1,15 @@
-﻿namespace IndiGames.QuestSystem.Specifications
+﻿using IndiGames.QuestSystem.Definitions;
+
+namespace IndiGames.QuestSystem.Specifications
 {
     public class Quest
     {
-        private Definitions.Quest _questDef;
+        public QuestDefinition Definition { get; }
+        public Task ActiveTask { get; }
 
-        public Quest(Definitions.Quest definition)
+        public Quest(QuestDefinition definition)
         {
-            _questDef = definition;
+            Definition = definition;
         }
     }
 }
