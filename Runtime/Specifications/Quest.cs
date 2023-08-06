@@ -2,14 +2,14 @@
 
 namespace IndiGames.QuestSystem.Specifications
 {
-    public class Quest
+    public class Quest : IQuestSpecification
     {
-        public QuestDefinition Definition { get; }
-        public Task ActiveTask { get; }
+        private IQuestDefinition _definition;
+        string IQuestSpecification.Id => _definition.Id;
 
-        public Quest(QuestDefinition definition)
+        public Quest(IQuestDefinition definition)
         {
-            Definition = definition;
+            _definition = definition;
         }
     }
 }

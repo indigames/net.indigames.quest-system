@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: 5d0c742aea9342a4bf726201af7e0795
+guid: 466dd9a5d5b0293498bbb3c1d3d3b0c4
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - QuestDefinitionEditorUxml: {fileID: 9197481963319205126, guid: 532ddb1eb84d9bd47b6e44f7e537af3a, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
