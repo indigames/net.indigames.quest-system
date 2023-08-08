@@ -1,15 +1,16 @@
-﻿using IndiGames.QuestSystem.Definitions;
+﻿using System;
+using IndiGames.QuestSystem.Definitions;
+using UnityEngine;
 
 namespace IndiGames.QuestSystem.Specifications
 {
-    public class Quest : IQuestSpecification
+    [Serializable]
+    public class Quest
     {
-        private IQuestDefinition _definition;
-        string IQuestSpecification.Id => _definition.Id;
-
-        public Quest(IQuestDefinition definition)
+        [SerializeField] private QuestScriptableObject _questDefinition;
+        public Quest(QuestScriptableObject quest)
         {
-            _definition = definition;
+            _questDefinition = quest;
         }
     }
 }
