@@ -1,5 +1,5 @@
 ﻿using System;
-using IndiGames.QuestSystem.Definitions;
+using IndiGames.QuestSystem.Authoring;
 using NSubstitute;
 using NUnit.Framework;
 

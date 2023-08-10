@@ -1,4 +1,4 @@
-﻿using IndiGames.QuestSystem.Definitions;
+﻿using IndiGames.QuestSystem.Authoring;
 using UnityEngine;
 
 namespace IndiGames.QuestSystem.Components
@@ -7,7 +7,7 @@ namespace IndiGames.QuestSystem.Components
     {
         [SerializeField] private bool _isActivated;
         [SerializeField] private bool _statusToActivate;
-        [SerializeField] private QuestScriptableObject _questDefinition;
+        [SerializeField] private Quest _questDefinition;
         [SerializeField] private GameObject _target;
 
         private void OnEnable()
@@ -22,7 +22,6 @@ namespace IndiGames.QuestSystem.Components
 
         public void CheckQuestStatus()
         {
-            QuestStatusChanged(_questDefinition.Completed);
         }
 
         private void QuestStatusChanged(bool hasCompleted)

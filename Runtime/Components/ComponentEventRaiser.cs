@@ -1,5 +1,5 @@
 ﻿using System;
-using IndiGames.QuestSystem.Definitions;
+using IndiGames.QuestSystem.Authoring;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -19,7 +19,7 @@ namespace IndiGames.QuestSystem.Components
         }
 
         [SerializeField] private bool _statusToRaise;
-        [SerializeField] private QuestScriptableObject _questDefinition;
+        [SerializeField] private Quest _questDefinition;
 
         private void OnEnable()
         {

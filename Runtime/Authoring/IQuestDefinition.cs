@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace IndiGames.QuestSystem.Definitions
+﻿namespace IndiGames.QuestSystem.Authoring
 {
     public interface IQuestDefinition
     {

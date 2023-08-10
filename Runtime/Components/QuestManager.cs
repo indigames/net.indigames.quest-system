@@ -1,5 +1,4 @@
-﻿using IndiGames.QuestSystem.Definitions;
-using IndiGames.QuestSystem.Specifications;
+﻿using IndiGames.QuestSystem.Authoring;
 using UnityEngine;
 using UnityEngine.Assertions;
 
@@ -10,9 +9,8 @@ namespace IndiGames.QuestSystem.Components
     public class QuestManager : MonoBehaviour
     {
         [SerializeField] private QuestDatabase _database;
-        [SerializeField] private QuestScriptableObject _startingQuest;
+        [SerializeField] private Quest _startingQuest;
 
-        [SerializeField] private Quest _currentActiveQuest;
 
         private void Awake()
         {
@@ -23,14 +21,6 @@ namespace IndiGames.QuestSystem.Components
         {
             Assert.IsNotNull(_database, "Quest database is null.");
             Assert.IsNotNull(_startingQuest, "Starting quest is null.");
-
-            foreach (var quest in _database.Quests)
-            {
-                if (quest == _startingQuest)
-                {
-                    _currentActiveQuest = new Quest(quest);
-                }
-            }
         }
     }
 }
